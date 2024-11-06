@@ -325,14 +325,14 @@ types:
     cost: 5000.0
     skull: skin:b78ef2e4cf2c41a2d14bfde9caff10219f5b1bf5b35a49eb51c6467882cb5f0
     no-conditions: true
-    butcher-drops:
-      - 'BLAZE_ROD:0:1'
+    item-drops:
+      - 'BLAZE_ROD:0:1' # drops min zero and max 1 blaze rod
   magma_cube:
     name: Magma Cube
     cost: 5000.0
     skull: skin:38957d5023c937c4c41aa2412d43410bda23cf79a9f6ab36b76fef2d7c429
     no-conditions: true
-    butcher-drops:
+    item-drops:
       - 'MAGMA_CREAM:0:1'
   ender_dragon:
     name: Ender Dragon

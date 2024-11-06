@@ -1,1 +1,7 @@
-- Fixed: Order of entities from entities.yml
+You can now define item and exp drops for each entity in entities.yml
+Example:
+
+item-drops:
+  - STONE:1:2 # drops min one and max two stone
+
+exp-drop: "1:2" drops min one and max two exp
