@@ -1,7 +1,2 @@
-You can now define item and exp drops for each entity in entities.yml
-Example:
-
-item-drops:
-  - STONE:1:2 # drops min one and max two stone
-
-exp-drop: "1:2" drops min one and max two exp
++ Added: Percentage chance for item drops etc.
+You need to adapt your entities.yml file, if you use custom drops currently: https://wiki.incredibleplugins.com/upgradeablespawners/configuration/entities
