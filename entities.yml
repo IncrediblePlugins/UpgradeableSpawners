@@ -79,14 +79,14 @@ types:
   mushroom_cow:
     name: Mushroom Cow
     cost: 5000.0
-    skull: skin:42a805209fa3f99983f42b99b92b99ebb89da4bcdaf6628645f11257d16ddabb
+    skull: skin:da82eb643d056eb26dae5e2ef77db0126f71d620e62dfd648ed4e6cecdf0cbb8
     force-butcher:
       always: false
     no-conditions: true
   snowman:
     name: Snowman
     cost: 5000.0
-    skull: skin:8e8d206f61e6de8a79d0cb0bcd98aced464cbfefc921b4160a25282163112a
+    skull: skin:a528df1653962e4e995dfd064a72b2cbff9b7197912880143f941a37db46c
     force-butcher:
       always: false
     no-conditions: true
@@ -325,15 +325,17 @@ types:
     cost: 5000.0
     skull: skin:b78ef2e4cf2c41a2d14bfde9caff10219f5b1bf5b35a49eb51c6467882cb5f0
     no-conditions: true
-    item-drops:
-      - 'BLAZE_ROD:0:1' # drops min zero and max 1 blaze rod
+    drops:
+      items:
+        - 'BLAZE_ROD:50:1' # chance of 50% dropping one blaze rod
   magma_cube:
     name: Magma Cube
     cost: 5000.0
     skull: skin:38957d5023c937c4c41aa2412d43410bda23cf79a9f6ab36b76fef2d7c429
     no-conditions: true
-    item-drops:
-      - 'MAGMA_CREAM:0:1'
+    drops:
+      items:
+        - 'MAGMA_CREAM:50:1'
   ender_dragon:
     name: Ender Dragon
     cost: 5000.0
