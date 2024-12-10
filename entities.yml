@@ -97,52 +97,96 @@ types:
     force-butcher:
       always: false
     no-conditions: true
-  iron_golem:
-    name: Iron Golem
-    cost: 5000.0
-    skull: skin:e13f34227283796bc017244cb46557d64bd562fa9dab0e12af5d23ad699cf697
-    force-butcher:
-      always: false
-    no-conditions: true
   horse:
     name: Horse
     cost: 5000.0
     skull: skin:29ac1eab3d6959394b4ef9c6d3f62eda65dc41ad18b816a783eba7074ec5bea0
+    no-conditions: true
+  donkey:
+    name: Donkey
+    cost: 5000.0
+    skull: skin:63a976c047f412ebc5cb197131ebef30c004c0faf49d8dd4105fca1207edaff3
+    no-conditions: true
+  mule:
+    name: Mule
+    cost: 5000.0
+    skull: skin:a0486a742e7dda0bae61ce2f55fa13527f1c3b334c57c034bb4cf132fb5f5f
     no-conditions: true
   rabbit:
     name: Rabbit
     cost: 5000.0
     skull: skin:ffecc6b5e6ea5ced74c46e7627be3f0826327fba26386c6cc7863372e9bc
     no-conditions: true
+    drops:
+      items:
+        rabbit_foot:
+          material: RABBIT_FOOT
+          data:
+            chance: 10
   polar_bear:
     name: Polar Bear
     cost: 5000.0
     skull: skin:d46d23f04846369fa2a3702c10f759101af7bfe8419966429533cd81a11d2b
+    no-conditions: true
+  axolotl:
+    name: Axolotl
+    cost: 5000.0
+    skull: skin:5c138f401c67fc2e1e387d9c90a9691772ee486e8ddbf2ed375fc8348746f936
     no-conditions: true
   llama:
     name: Llama
     cost: 5000.0
     skull: skin:9f7d90b305aa64313c8d4404d8d652a96eba8a754b67f4347dcccdd5a6a63398
     no-conditions: true
+  fox:
+    name: Fox
+    cost: 5000.0
+    skull: skin:89a3a9e946b1dcf852710cef63635ca2cb06eb8a5aadd1beb6f9905474961788
+    no-conditions: true
+    drops:
+      items:
+        emerald:
+          material: EMERALD
+          data:
+            chance: 1
+        rabbit_foot:
+          material: RABBIT_FOOT
+          data:
+            chance: 2
+        rabbit_hide:
+          material: RABBIT_HIDE
+          data:
+            chance: 2
+        egg:
+          material: EGG
+          data:
+            chance: 3
+        wheat:
+          material: WHEAT
+          data:
+            chance: 4
+        leather:
+          material: LEATHER
+          data:
+            chance: 4
+        feather:
+          material: FEATHER
+          data:
+            chance: 4
+  bee:
+    name: Bee
+    cost: 5000.0
+    skull: skin:fa2cb74c13245d3ce9bacc8b1600af02fd7c91f501feaf97364e1f8b6f04f47f
+    no-conditions: true
   parrot:
     name: Parrot
     cost: 5000.0
     skull: skin:a4ba8d66fecb1992e94b8687d6ab4a5320ab7594ac194a2615ed4df818edbc3
     no-conditions: true
-  creeper:
-    name: Creeper
+  bat:
+    name: Bat
     cost: 5000.0
-    skull: skin:1ff8f6d00d5b07387584f117c66d698c90c69cedb01a6e69dbb02771c7302d16
-    no-conditions: true
-  skeleton:
-    name: Skeleton
-    cost: 5000.0
-    skull: skin:301268e9c492da1f0d88271cb492a4b302395f515a7bbf77f4a20b95fc02eb2
-    no-conditions: true
-  spider:
-    name: Spider
-    cost: 5000.0
-    skull: skin:cd541541daaff50896cd258bdbdd4cf80c3ba816735726078bfe393927e57f1
+    skull: skin:9e99deef919db66ac2bd28d6302756ccd57c7f8b12b9dca8f41c3e0a04ac1cc
     no-conditions: true
   dolphin:
     name: Dolphin
@@ -179,21 +223,6 @@ types:
     cost: 5000.0
     skull: skin:747c63ff0f41a531e6081fc65880470699c1daa3a471ac514f4534c5e3f4b5dd
     no-conditions: true
-  axolotl:
-    name: Axolotl
-    cost: 5000.0
-    skull: skin:5c138f401c67fc2e1e387d9c90a9691772ee486e8ddbf2ed375fc8348746f936
-    no-conditions: true
-  bat:
-    name: Bat
-    cost: 5000.0
-    skull: skin:9e99deef919db66ac2bd28d6302756ccd57c7f8b12b9dca8f41c3e0a04ac1cc
-    no-conditions: true
-  villager:
-    name: Villager
-    cost: 5000.0
-    skull: skin:126ec1ca185b47aad39f931db8b0a8500ded86a127a204886ed4b3783ad1775c
-    no-conditions: true
   turtle:
     name: Turtle
     cost: 5000.0
@@ -211,15 +240,38 @@ types:
     skull: skin:ee011aac817259f2b48da3e5ef266094703866608b3d7d1754432bf249cd2234
     no-conditions: true
     enabled: false
-  fox:
-    name: Fox
+  iron_golem:
+    name: Iron Golem
     cost: 5000.0
-    skull: skin:89a3a9e946b1dcf852710cef63635ca2cb06eb8a5aadd1beb6f9905474961788
+    skull: skin:e13f34227283796bc017244cb46557d64bd562fa9dab0e12af5d23ad699cf697
+    force-butcher:
+      always: false
     no-conditions: true
-  bee:
-    name: Bee
+  creeper:
+    name: Creeper
     cost: 5000.0
-    skull: skin:fa2cb74c13245d3ce9bacc8b1600af02fd7c91f501feaf97364e1f8b6f04f47f
+    skull: skin:1ff8f6d00d5b07387584f117c66d698c90c69cedb01a6e69dbb02771c7302d16
+    no-conditions: true
+  skeleton:
+    name: Skeleton
+    cost: 5000.0
+    skull: skin:301268e9c492da1f0d88271cb492a4b302395f515a7bbf77f4a20b95fc02eb2
+    no-conditions: true
+  spider:
+    name: Spider
+    cost: 5000.0
+    skull: skin:cd541541daaff50896cd258bdbdd4cf80c3ba816735726078bfe393927e57f1
+    no-conditions: true
+    drops:
+      items:
+        spider_eye:
+          material: SPIDER_EYE
+          data:
+            chance: 33
+  villager:
+    name: Villager
+    cost: 5000.0
+    skull: skin:126ec1ca185b47aad39f931db8b0a8500ded86a127a204886ed4b3783ad1775c
     no-conditions: true
   elder_guardian:
     name: Elder Guardian
@@ -227,27 +279,74 @@ types:
     skull: skin:1c797482a14bfcb877257cb2cff1b6e6a8b8413336ffb4c29a6139278b436b
     no-conditions: true
     enabled: false
+    drops:
+      items:
+        wet_sponge:
+          material: WET_SPONGE
   wither_skeleton:
     name: Wither Skeleton
     cost: 5000.0
     skull: skin:886dc0cfcaeecfe1ab69146e4d4f1190837076a67dec135fabda6271f375d01f
     no-conditions: true
+    drops:
+      items:
+        wither_skeleton_skull:
+          material: WITHER_SKELETON_SKULL
+          data:
+            chance: 2.5
   stray:
     name: Stray
     cost: 5000.0
     skull: skin:78ddf76e555dd5c4aa8a0a5fc584520cd63d489c253de969f7f22f85a9a2d56
     no-conditions: true
-    enabled: false
+    enabled: true
+    drops:
+      items:
+        tipped_arrow:
+          material: TIPPED_ARROW
+          potion:
+            type: "minecraft:slowness"
+            duration: 180
+          data:
+            chance: 50
   husk:
     name: Husk
     cost: 5000.0
     skull: skin:c096164f81950a5cc0e33e87999f98cde792517f4d7f99a647a9aedab23ae58
     no-conditions: true
+    drops:
+      items:
+        iron_ingot:
+          material: IRON_INGOT
+          data:
+            chance: 2.5
+        carrot:
+          material: CARROT
+          data:
+            chance: 2.5
+        potato:
+          material: POTATO
+          data:
+            chance: 2.5
   zombie_villager:
     name: Zombie Villager
     cost: 5000.0
     skull: skin:75ab0527ecb313aab1413e65353aacd8672bc91e98b8a09c1a1ae78bb1db9681
     no-conditions: true
+    drops:
+      items:
+        iron_ingot:
+          material: IRON_INGOT
+          data:
+            value: 2.5
+        carrot:
+          material: CARROT
+          data:
+            chance: 2.5
+        potato:
+          material: POTATO
+          data:
+            chance: 2.5
   skeleton_horse:
     name: Skeleton Horse
     cost: 5000.0
@@ -258,21 +357,18 @@ types:
     cost: 5000.0
     skull: skin:d22950f2d3efddb18de86f8f55ac518dce73f12a6e0f8636d551d8eb480ceec
     no-conditions: true
-  donkey:
-    name: Donkey
-    cost: 5000.0
-    skull: skin:63a976c047f412ebc5cb197131ebef30c004c0faf49d8dd4105fca1207edaff3
-    no-conditions: true
-  mule:
-    name: Mule
-    cost: 5000.0
-    skull: skin:a0486a742e7dda0bae61ce2f55fa13527f1c3b334c57c034bb4cf132fb5f5f
-    no-conditions: true
   evoker:
     name: Evoker
     cost: 5000.0
     skull: skin:d954135dc82213978db478778ae1213591b93d228d36dd54f1ea1da48e7cba6
     no-conditions: true
+    drops:
+      exp: "10"
+      items:
+        emerald:
+          material: EMERALD
+          data:
+            chance: 50
   vex:
     name: Vex
     cost: 5000.0
@@ -283,6 +379,12 @@ types:
     cost: 5000.0
     skull: skin:6deaec344ab095b48cead7527f7dee61b063ff791f76a8fa76642c8676e2173
     no-conditions: true
+    drops:
+      items:
+        emerald:
+          material: EMERALD
+          data:
+            chance: 50
   illusioner:
     name: Illusioner
     cost: 5000.0
@@ -294,6 +396,20 @@ types:
     cost: 5000.0
     skull: skin:783aaaee22868cafdaa1f6f4a0e56b0fdb64cd0aeaabd6e83818c312ebe66437
     no-conditions: true
+    drops:
+      items:
+        iron_ingot:
+          material: IRON_INGOT
+          data:
+            chance: 2.5
+        carrot:
+          material: CARROT
+          data:
+            chance: 2.5
+        potato:
+          material: POTATO
+          data:
+            chance: 2.5
   slime:
     name: Slime
     cost: 5000.0
@@ -315,6 +431,12 @@ types:
     cost: 5000.0
     skull: skin:5617f7dd5ed16f3bd186440517cd440a170015b1cc6fcb2e993c05de33f
     no-conditions: true
+    drops:
+      items:
+        spider_eye:
+          material: SPIDER_EYE
+          data:
+            chance: 33
   silverfish:
     name: Silverfish
     cost: 5000.0
@@ -327,21 +449,25 @@ types:
     no-conditions: true
     drops:
       items:
-        - 'BLAZE_ROD:50:1' # chance of 50% dropping one blaze rod
+        blaze_rod:
+          material: BLAZE_ROD
+          data:
+            chance: 50
   magma_cube:
     name: Magma Cube
     cost: 5000.0
     skull: skin:38957d5023c937c4c41aa2412d43410bda23cf79a9f6ab36b76fef2d7c429
     no-conditions: true
-    drops:
-      items:
-        - 'MAGMA_CREAM:50:1'
   ender_dragon:
     name: Ender Dragon
     cost: 5000.0
     skull: skin:f68c1c079a7ffb36f48dd7150355e3e0b7f68dd605e6f8847313c360cf61e0c
     no-conditions: true
     enabled: false
+    drops:
+      items:
+        dragon_egg:
+          material: DRAGON_EGG
   wither:
     name: Wither
     cost: 5000.0
@@ -364,6 +490,24 @@ types:
     cost: 5000.0
     skull: skin:e8b0a74335696b2bf4cf4780aca4a2835d401edb934669dcaec56fb97b670a7
     no-conditions: true
+    drops:
+      items:
+        cod:
+          material: COD
+          data:
+            chance: 1.5
+        salmon:
+          material: SALMON
+          data:
+            chance: 0.625
+        pufferfish:
+          material: PUFFERFISH
+          data:
+            chance: 0.325
+        tropical_fish:
+          material: TROPICAL_FISH
+          data:
+            chance: 0.05
   shulker:
     name: Shulker
     cost: 5000.0
@@ -374,11 +518,34 @@ types:
     cost: 5000.0
     skull: skin:746830da5f83a3aaed838a99156ad781a789cfcf13e25beef7f54a86e4fa4
     no-conditions: true
+    drops:
+      items:
+        phantom_membrane:
+          material: PHANTOM_MEMBRANE
   drowned:
     name: Drowned
     cost: 5000.0
     skull: skin:c84df79c49104b198cdad6d99fd0d0bcf1531c92d4ab6269e40b7d3cbbb8e98c
     no-conditions: true
+    drops:
+      items:
+        copper_ingot:
+          material: COPPER_INGOT
+          data:
+            chance: 11
+        trident:
+          material: TRIDENT
+          data:
+            chance: 6.25
+        nautilus_shell:
+          material: NAUTILUS_SHELL
+          data:
+            chance: 3
+        fishing_rod:
+          enabled: false
+          material: FISHING_ROD
+          data:
+            chance: 3.75
   pillager:
     name: Pillager
     cost: 5000.0
@@ -399,3 +566,9 @@ types:
     cost: 5000.0
     skull: skin:e935842af769380f78e8b8a88d1ea6ca2807c1e5693c2cf797456620833e936f
     no-conditions: true
+    drops:
+      items:
+        gold_ingot:
+          material: GOLD_INGOT
+          data:
+            chance: 2.5
