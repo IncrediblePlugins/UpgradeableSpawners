@@ -1,2 +1,1 @@
-+ Added: You can now add enchantments etc to entity drops
-You need to adapt your entities.yml file, if you use custom drops currently: https://wiki.incredibleplugins.com/upgradeablespawners/configuration/entities
+- Fixed: Item and exp drops with kill-stack enabled
