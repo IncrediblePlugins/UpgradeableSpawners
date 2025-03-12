@@ -1,1 +1,2 @@
-- Fixed: Item and exp drops with kill-stack enabled
+- Fixed: Startup or due to missing potion type on older server versions
+- Fixed: Close menu of other players if spawner deleted
