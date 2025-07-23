@@ -1,2 +1,1 @@
-- Fixed: Startup or due to missing potion type on older server versions
-- Fixed: Close menu of other players if spawner deleted
+- Fixed: Insights compatability
