@@ -1,1 +1,1 @@
-- Fixed: Insights compatability
+- Fixed: Message about invalid level index with default config
