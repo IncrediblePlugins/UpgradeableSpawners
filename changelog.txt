@@ -1,1 +1,1 @@
-- Fixed: Message about invalid level index with default config
++ Improved: Skip setting entity type on chunk load to improve performance
