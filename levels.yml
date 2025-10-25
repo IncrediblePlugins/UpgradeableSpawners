@@ -58,7 +58,7 @@ spawn_amount:
 
 # Period Amount
 # Set how many mobs attempt to spawn in each period.
-# The period can be configured in the config file.
+# The period can be configured or disabled in the config file.
 period_amount:
   1:
     value: 30

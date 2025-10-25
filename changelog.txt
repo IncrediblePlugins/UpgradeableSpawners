@@ -1,1 +1,1 @@
-+ Improved: Skip setting entity type on chunk load to improve performance
++ Added: [Suggestion] Remove period metadata from item if period is disabled in config.yml

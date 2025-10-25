@@ -224,7 +224,7 @@ limit:
     max-entities: 150
 
   # Set period of the period-amount upgrade.
-  # The period amount-upgrade can be disabled by disabling the menu item and setting the period time to 0.
+  # This can be disabled by setting the period time to 0.
   # Disable menu items: https://github.com/Angeschossen/General/wiki/GUI-Menus#disable-items
   period:
     # Set the time of the period.
