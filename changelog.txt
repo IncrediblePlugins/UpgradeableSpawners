@@ -1,1 +1,1 @@
-+ Added: [Suggestion] Remove period metadata from item if period is disabled in config.yml
++ Added: [Suggestion] FancyHolograms support

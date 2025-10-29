@@ -190,6 +190,7 @@ hologram:
   # Only show the hologram, if the spawner is paused?
   only-paused: true
   # Y offset - adjust the height
+  # This might need to be adjusted depending on the hologram plugin you use.
   offset: 0
 
 
