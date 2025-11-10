@@ -1,1 +1,2 @@
-+ Added: [Suggestion] FancyHolograms support
++ Added: [Suggestion] Being able to give player a spawner without owner: /uspawner admin give <...> false
++ Added: {level_spawn_amount} placeholder to status hologram
